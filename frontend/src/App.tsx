@@ -1,10 +1,21 @@
 import React from "react"
+import Navbar from "./components/Navbar"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Projects from "./pages/Projects"
+import Contact from "./pages/Contact"
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>{" "}
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   )
 }
 
