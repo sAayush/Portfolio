@@ -1,0 +1,15 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.animate-arrow {
+  transition: transform 0.3s ease;
+}
+
+.animate-arrow:hover {
+  transform: translateX(4px);
+}
